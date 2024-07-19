@@ -150,7 +150,7 @@
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
   position: relative;
-  margin-top: -20vh;
+  margin-top: -18vh;
   #inner {
     max-width: 1024px;
   }
@@ -159,13 +159,16 @@
     ul {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 6px;
       li {
-        width: calc(100% / 2 - 6px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(100% / 2 - 3px);
         background-color: var(--bg-color-white);
         border: 1px solid var(--border-color);
         border-radius: 12px;
-        padding: 12px;
+        padding: 32px;
         color: var(--color);
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.01), 0 2px 4px rgba(0, 0, 0, 0.01), 0 4px 8px rgba(0, 0, 0, 0.01),
           0 8px 16px rgba(0, 0, 0, 0.01), 0 16px 32px rgba(0, 0, 0, 0.01), 0 32px 64px rgba(0, 0, 0, 0.01);
@@ -174,14 +177,16 @@
           font-weight: 900;
           line-height: 26px;
           letter-spacing: -0.25px;
-          padding: 12px;
           display: block;
+          white-space: nowrap;
         }
         p {
           color: var(--color-gray);
           font-size: 14px;
           line-height: 20px;
           font-weight: 500;
+          margin-top: 12px;
+          width: 120px;
         }
       }
     }
@@ -190,7 +195,8 @@
     padding-top: 48px;
     .keyword_bage {
       display: inline-block;
-      padding: 12px 18px;
+      line-height: 38px;
+      padding: 0 16px;
       font-size: 16px;
       border-radius: 50px;
       margin-bottom: 14px;
