@@ -4,6 +4,8 @@
   --color-white: #fff;
   --color-gray: #808080;
   --color-point: #0064ff;
+  --color-table: #969696;
+  --color-warning: #e12b10;
 
   /*텍스트 두께*/
   --font-right: 300;
@@ -11,14 +13,16 @@
   --font-bold: 700;
 
   /*라인 컬러*/
-  --border-color: #e5e5e5;
+  --border-color: #e3e6eb;
 
   /*배경컬러*/
+  --bg-color-default: #1f1f1f;
   --bg-color-inter: #244373;
   --bg-color-blue: #0064ff;
-  --bg-color-grey: #6b717b;
+  --bg-color-gray: #6b717b;
   --bg-color-navy: #2a4063;
   --bg-color-white: #fff;
+  --bg-color-table-gray: #fafafa;
 }
 
 /*초기 셋팅 import*/
@@ -35,9 +39,10 @@
 }
 body {
   overflow-x: hidden;
-  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue",
-    "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", sans-serif;
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   color: var(--color-default);
 }
 a,
@@ -47,4 +52,7 @@ a:hover {
 img {
   width: 100%;
   vertical-align: top;
+}
+p {
+  word-break: break-all;
 }
