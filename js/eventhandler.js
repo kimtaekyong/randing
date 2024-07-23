@@ -1,5 +1,4 @@
 /*서비스 탭 메뉴 리스트 */
-
 document.addEventListener("DOMContentLoaded", () => {
   // 모든 탭 버튼과 컨텐츠 요소를 선택합니다.
   const tabs = document.querySelectorAll(".tab-button");

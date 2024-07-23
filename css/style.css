@@ -77,8 +77,8 @@
 }
 .intro .intro_title .intro_sub_title {
   padding: 14px 0;
-  line-height: 24px;
-  font-size: 18px;
+  line-height: 22px;
+  font-size: 16px;
   font-weight: 500;
 }
 .intro .right_icon {
@@ -185,9 +185,9 @@
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.01), 0 2px 4px rgba(0, 0, 0, 0.01), 0 4px 8px rgba(0, 0, 0, 0.01), 0 8px 16px rgba(0, 0, 0, 0.01), 0 16px 32px rgba(0, 0, 0, 0.01), 0 32px 64px rgba(0, 0, 0, 0.01);
 }
 .contaniner .point_list ul li span {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 24px;
   letter-spacing: -0.25px;
   display: block;
   text-align: left;
@@ -236,6 +236,8 @@
 }
 .contaniner .limousine .section_desc {
   line-height: 22px;
+  letter-spacing: -0.5px;
+  padding: 12px 0;
 }
 .contaniner .limousine .section_desc p {
   font-size: 16px;
@@ -621,8 +623,9 @@
 }
 .contaniner .premium .premium_item_list ul li .item_desc {
   text-align: left;
-  padding: 12px 0;
-  letter-spacing: -0.5px;
+  padding: 16px 0;
+  letter-spacing: -1px;
+  line-height: 14px;
 }
 .contaniner .premium .premium_item_list ul li .item_desc h4 {
   font-size: 18px;
@@ -630,8 +633,8 @@
   margin-bottom: 8px;
 }
 .contaniner .premium .premium_item_list ul li .item_desc p {
-  line-height: 20px;
-  font-size: 15px;
+  line-height: 24px;
+  font-size: 16px;
   font-weight: 500;
 }
 .contaniner .funeral_list {
@@ -661,6 +664,8 @@
 }
 .contaniner .funeral_list .section_text_wrap .section_desc {
   line-height: 22px;
+  letter-spacing: -0.5px;
+  padding: 12px 0;
 }
 .contaniner .funeral_list .section_text_wrap .section_desc p {
   font-size: 16px;
@@ -675,24 +680,51 @@
 }
 .contaniner .funeral_list .list_tab_button ul {
   display: flex;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
   overflow-x: scroll;
   margin: 24px 0 0 0;
   padding: 0 24px 0 12px;
+  -ms-overflow-style: none;
+  margin-bottom: 24px;
+}
+.contaniner .funeral_list .list_tab_button ul::-webkit-scrollbar {
+  display: none;
 }
 .contaniner .funeral_list .list_tab_button ul li {
   width: 100%;
-  padding: 24px 12px;
   font-weight: 500;
+  padding: 16px 0;
   text-align: left;
   letter-spacing: -0.5px;
   white-space: nowrap;
   font-size: 15px;
   color: var(--color-table);
+  position: relative;
+}
+.contaniner .funeral_list .list_tab_button ul li::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 80%;
+  background-color: var(--bg-color-default);
+  display: none;
+}
+.contaniner .funeral_list .list_tab_button ul li.active {
+  font-weight: 700;
+  color: var(--color-default);
+}
+.contaniner .funeral_list .list_tab_button ul li.active::after {
+  display: block;
 }
 .contaniner .funeral_list .item_list {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 24px;
+  padding: 0 12px;
 }
 .contaniner .funeral_list .item_list .item {
   width: 100%;
@@ -720,13 +752,13 @@
   font-weight: 500;
 }
 .contaniner .funeral_list .item_list .item .item_desc span {
-  line-height: 30px;
+  line-height: 20px;
   margin-bottom: 20px;
   display: block;
 }
 .contaniner .funeral_list .item_list .item .item_desc span h4 {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 4px;
 }
 .contaniner .funeral_list .item_list .item .item_desc span p {
@@ -796,4 +828,128 @@
   font-weight: 500;
   text-align: left;
   letter-spacing: -0.5px;
+}
+.contaniner .boram_shop {
+  padding-top: 60px;
+}
+.contaniner .boram_shop .section_text_wrap .keyword_bage {
+  display: inline-block;
+  line-height: 38px;
+  padding: 0 20px;
+  font-size: 14px;
+  border-radius: 50px;
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+.contaniner .boram_shop .section_text_wrap .section_title {
+  margin-bottom: 8px;
+  font-size: 30px;
+  padding: 0 12px;
+}
+.contaniner .boram_shop .section_text_wrap .section_title p {
+  letter-spacing: -1.5px;
+  font-weight: 100;
+  margin-bottom: 8px;
+}
+.contaniner .boram_shop .section_text_wrap .section_title p:last-child {
+  font-weight: 700;
+}
+.contaniner .boram_shop .section_text_wrap .section_desc {
+  line-height: 22px;
+  letter-spacing: -0.5px;
+  padding: 12px 0;
+}
+.contaniner .boram_shop .section_text_wrap .section_desc p {
+  font-size: 16px;
+}
+.contaniner .boram_shop .section_text_wrap .section_desc .t_color {
+  font-weight: 700;
+}
+.contaniner .boram_shop .shop_point {
+  padding: 32px 24px;
+}
+.contaniner .boram_shop .shop_point ul {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+.contaniner .boram_shop .shop_point ul li {
+  width: 100%;
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  padding: 24px 0;
+  border-top: 1px solid var(--border-color);
+}
+.contaniner .boram_shop .shop_point ul li .shop_icon {
+  width: 24px;
+  height: 24px;
+}
+.contaniner .boram_shop .shop_point ul li .shop_desc {
+  text-align: left;
+  color: var(--color-default);
+}
+.contaniner .boram_shop .shop_point ul li .shop_desc span {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: block;
+  white-space: nowrap;
+}
+.contaniner .boram_shop .shop_point ul li .shop_desc p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--color-gray);
+  word-break: keep-all;
+}
+.contaniner .boram_shop .shop_service {
+  width: 100%;
+  text-align: left;
+  padding: 48px 24px;
+  background-color: var(--bg-color-blue);
+  color: var(--color-white);
+}
+.contaniner .boram_shop .shop_service span {
+  margin-bottom: 12px;
+  display: block;
+  font-weight: 500;
+}
+.contaniner .boram_shop .shop_service .shop_title {
+  font-weight: 300;
+}
+.contaniner .boram_shop .shop_service .shop_title p {
+  font-size: 18px;
+}
+.contaniner .boram_shop .shop_service .shop_title p:last-child {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 38px;
+}
+.contaniner .boram_shop .shop_service ul li {
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+.contaniner .boram_shop .shop_service ul li:last-child {
+  border-bottom: none;
+}
+.contaniner .boram_shop .shop_service ul li p {
+  width: 30%;
+  line-height: 24px;
+  word-break: keep-all;
+  font-size: 16px;
+  font-weight: 700;
+}
+.contaniner .boram_shop .shop_service ul li p:last-child {
+  width: 100%;
+  font-weight: 300;
+}
+.contaniner .ad_banner.dark {
+  background-color: var(--bg-color-table-gray);
+}
+.contaniner .ad_banner.dark .ad_desc p {
+  color: var(--color-default) !important;
+  font-weight: 700 !important;
 }/*# sourceMappingURL=style.css.map */
