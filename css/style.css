@@ -247,7 +247,7 @@
 }
 .contaniner .limousine .section_img_box {
   margin-top: 32px;
-  padding: 0 22px;
+  padding: 0 12px;
 }
 .contaniner .limousine .section_img_box .section_img_desc {
   padding: 12px 0;
@@ -274,6 +274,7 @@
   font-weight: 500;
   line-height: 24px;
   color: var(--color-gray);
+  word-break: break-all;
 }
 .contaniner .service {
   padding-top: 48px;
@@ -384,7 +385,7 @@
 .contaniner .service .service_tab_wrap .tab_contents .content ul li .table_nomal {
   text-align: left;
   width: 65%;
-  padding: 24px 14px;
+  padding: 24px 18px;
   background-color: var(--bg-color-white);
   word-break: break-all;
 }
@@ -408,6 +409,12 @@
   justify-content: space-between;
   align-items: center;
   height: 80px;
+}
+.contaniner .ad_banner #inner .ad_desc .font_gm {
+  font-family: "GmarketSans" !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  margin-bottom: 12px;
 }
 .contaniner .ad_banner #inner .ad_desc p {
   font-weight: 500;
@@ -449,7 +456,7 @@
   margin-top: 0px;
 }
 .contaniner .story {
-  padding: 60px 0 24px 0;
+  padding: 24px 0;
 }
 .contaniner .story .section_text_wrap .keyword_bage {
   display: inline-block;
@@ -513,9 +520,10 @@
   color: var(--color-gray);
 }
 .contaniner .story .story_container .about_list .about_desc p {
-  word-break: break-all;
+  word-break: keep-all;
   letter-spacing: -0.5px;
-  line-height: 24px;
+  line-height: 20px;
+  font-size: 15px;
 }
 .contaniner .story .story_container .about_list .about_desc .t_color {
   font-weight: 700;
@@ -535,11 +543,12 @@
 }
 .contaniner .story .story_container .about_list .about_desc .about_desc_sub_title {
   letter-spacing: -0.5px;
-  padding: 12px 0 8px 0;
+  padding: 12px 0;
 }
 .contaniner .story .story_container .about_list .about_desc .about_desc_sub_title h4 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
+  margin-bottom: 8px;
   color: var(--color-default);
 }
 .contaniner .story .story_container .history {
@@ -623,9 +632,8 @@
 }
 .contaniner .premium .premium_item_list ul li .item_desc {
   text-align: left;
-  padding: 16px 0;
+  padding: 14px 0 24px 0;
   letter-spacing: -1px;
-  line-height: 14px;
 }
 .contaniner .premium .premium_item_list ul li .item_desc h4 {
   font-size: 18px;
@@ -686,7 +694,7 @@
   margin: 24px 0 0 0;
   padding: 0 24px 0 12px;
   -ms-overflow-style: none;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 .contaniner .funeral_list .list_tab_button ul::-webkit-scrollbar {
   display: none;
@@ -694,7 +702,7 @@
 .contaniner .funeral_list .list_tab_button ul li {
   width: 100%;
   font-weight: 500;
-  padding: 16px 0;
+  padding: 12px 0;
   text-align: left;
   letter-spacing: -0.5px;
   white-space: nowrap;
@@ -710,7 +718,7 @@
   left: 50%;
   transform: translateX(-50%);
   height: 2px;
-  width: 80%;
+  width: 100%;
   background-color: var(--bg-color-default);
   display: none;
 }
@@ -737,6 +745,7 @@
   text-align: left;
   display: flex;
   justify-content: space-between;
+  padding: 12px 0;
 }
 .contaniner .funeral_list .item_list .item .item_desc .number_icon {
   background-color: var(--bg-color-blue);
@@ -753,7 +762,6 @@
 }
 .contaniner .funeral_list .item_list .item .item_desc span {
   line-height: 20px;
-  margin-bottom: 20px;
   display: block;
 }
 .contaniner .funeral_list .item_list .item .item_desc span h4 {
