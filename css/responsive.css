@@ -2,4 +2,32 @@
   .shop_point ul li {
     width: 100% !important;
   }
+  .premium .section_text_wrap .keyword_bage {
+    display: inline-block;
+    line-height: 38px;
+    padding: 0 20px;
+    font-size: 14px;
+    border-radius: 50px;
+    margin-bottom: 14px;
+    font-weight: 500;
+  }
+  .premium .section_text_wrap .section_title {
+    margin-bottom: 8px;
+    font-size: 30px;
+    padding: 0 12px;
+  }
+  .premium .section_text_wrap .section_title p {
+    letter-spacing: -1.5px;
+    font-weight: 100;
+    margin-bottom: 8px;
+  }
+  .premium .section_text_wrap .section_title p:last-child {
+    font-weight: 700;
+  }
+  .premium .premium_item_list {
+    padding: 0 12px;
+  }
+  .premium .premium_item_list ul li img {
+    height: 240px !important;
+  }
 }/*# sourceMappingURL=responsive.css.map */

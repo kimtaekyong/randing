@@ -3,6 +3,34 @@
   .shop_point ul li {
     width: 100% !important;
   }
+  .premium .section_text_wrap .keyword_bage {
+    display: inline-block;
+    line-height: 38px;
+    padding: 0 20px;
+    font-size: 14px;
+    border-radius: 50px;
+    margin-bottom: 14px;
+    font-weight: 500;
+  }
+  .premium .section_text_wrap .section_title {
+    margin-bottom: 8px;
+    font-size: 30px;
+    padding: 0 12px;
+  }
+  .premium .section_text_wrap .section_title p {
+    letter-spacing: -1.5px;
+    font-weight: 100;
+    margin-bottom: 8px;
+  }
+  .premium .section_text_wrap .section_title p:last-child {
+    font-weight: 700;
+  }
+  .premium .premium_item_list {
+    padding: 0 12px;
+  }
+  .premium .premium_item_list ul li img {
+    height: 240px !important;
+  }
 }
 /*텍스트 컬러 관련 클래스 */
 .keyword_bage {
@@ -199,8 +227,8 @@
 }
 .container .point_list ul li p {
   color: var(--color-gray);
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 15px;
+  line-height: 20px;
   font-weight: 500;
   margin-top: 8px;
 }
@@ -527,7 +555,7 @@
 .container .story .story_container .about_list .about_desc p {
   word-break: keep-all;
   letter-spacing: -0.5px;
-  line-height: 20px;
+  line-height: 22px;
   font-size: 15px;
 }
 .container .story .story_container .about_list .about_desc .t_color {
@@ -632,7 +660,7 @@
   margin-bottom: 16px;
 }
 .container .premium .premium_item_list ul li img {
-  height: 220px;
+  height: 420px;
 }
 .container .premium .premium_item_list ul li .item_desc {
   text-align: left;
