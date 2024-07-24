@@ -71,6 +71,8 @@
   }
   .list_tab_button ul li {
     width: calc(50% - 6px) !important;
+    padding: 16px !important;
+    font-size: 15px !important;
   }
 }
 /*텍스트 컬러 관련 클래스 */
@@ -449,7 +451,7 @@
   background-color: var(--bg-color-table-gray);
   width: 35%;
   text-align: left;
-  padding: 24px 18px;
+  padding: 18px;
   height: 100%;
 }
 .container .service .service_tab_wrap .tab_contents .content ul li .table_bold p {
@@ -460,7 +462,7 @@
   text-align: left;
   width: 65%;
   height: 100%;
-  padding: 24px 18px;
+  padding: 18px;
   background-color: var(--bg-color-white);
   word-break: break-all;
 }
@@ -523,7 +525,7 @@
   background-color: var(--bg-color-table-gray);
   width: 35%;
   text-align: left;
-  padding: 24px 18px;
+  padding: 18px;
   height: 100%;
 }
 .container .service .service_tab_wrap .tablet_contents .content ul li .table_bold p {
@@ -849,15 +851,15 @@
   display: inline-block;
   width: calc(16.6666666667% - 6px);
   font-weight: 500;
-  padding: 12px;
+  padding: 14px;
   text-align: left;
   letter-spacing: -0.5px;
-  font-size: 14px;
-  color: var(--color-table);
+  font-size: 16px;
+  color: var(--color-default);
   position: relative;
-  border: 1px solid var(--border-color);
+  border: 1px solid #e5e5e5;
   border-radius: 4px;
-  line-height: 18px;
+  line-height: 20px;
 }
 .container .funeral_list .list_tab_button ul li.active {
   color: var(--color-white);

@@ -368,7 +368,7 @@
                 background-color: var(--bg-color-table-gray);
                 width: 35%;
                 text-align: left;
-                padding: 24px 18px;
+                padding: 18px;
                 height: 100%;
                 p {
                   font-weight: 500;
@@ -379,7 +379,7 @@
                 text-align: left;
                 width: 65%;
                 height: 100%;
-                padding: 24px 18px;
+                padding: 18px;
                 background-color: var(--bg-color-white);
                 word-break: break-all;
                 p {
@@ -449,7 +449,7 @@
                 background-color: var(--bg-color-table-gray);
                 width: 35%;
                 text-align: left;
-                padding: 24px 18px;
+                padding: 18px;
                 height: 100%;
                 p {
                   font-weight: 500;
@@ -795,15 +795,15 @@
           display: inline-block;
           width: calc(100% / 6 - 6px);
           font-weight: 500;
-          padding: 12px;
+          padding: 14px;
           text-align: left;
           letter-spacing: -0.5px;
-          font-size: 14px;
-          color: var(--color-table);
+          font-size: 16px;
+          color: var(--color-default);
           position: relative;
-          border: 1px solid var(--border-color);
+          border: 1px solid #e5e5e5;
           border-radius: 4px;
-          line-height: 18px;
+          line-height: 20px;
           &.active {
             color: var(--color-white);
             background-color: var(--bg-color-blue);

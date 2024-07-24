@@ -70,5 +70,6 @@
   }
   .list_tab_button ul li {
     width: calc(50% - 6px) !important;
+    padding: 16px !important;
   }
 }/*# sourceMappingURL=responsive.css.map */
