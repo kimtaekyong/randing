@@ -1,3 +1,5 @@
+@import "./responsive.scss";
+
 /*텍스트 컬러 관련 클래스 */
 .keyword_bage {
   background-color: var(--bg-color-blue);
@@ -152,7 +154,7 @@
   }
 }
 
-.contaniner {
+.container {
   background-color: #fbfbfb;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
@@ -543,11 +545,10 @@
           }
           .about_desc_sub_title {
             letter-spacing: -0.5px;
-            padding: 12px 0;
+            padding: 12px 0 8px 0;
             h4 {
               font-size: 18px;
               font-weight: 700;
-              margin-bottom: 8px;
               color: var(--color-default);
             }
           }
@@ -888,9 +889,9 @@
       ul {
         display: flex;
         flex-wrap: wrap;
-        column-gap: 12px;
+        justify-content: center;
         li {
-          width: calc(100%);
+          width: calc(50%);
           display: flex;
           column-gap: 30px;
           padding: 24px 0;
@@ -958,7 +959,7 @@
             font-weight: 700;
             &:last-child {
               width: 100%;
-              font-weight: 300;
+              font-weight: 500;
             }
           }
         }

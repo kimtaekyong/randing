@@ -1,0 +1,5 @@
+@media (min-width: 320px) and (max-width: 767px) {
+  .shop_point ul li {
+    width: 100% !important;
+  }
+}/*# sourceMappingURL=responsive.css.map */

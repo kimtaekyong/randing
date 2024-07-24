@@ -34,6 +34,16 @@
 /*프리텐다드 폰트 font-weight : 100 / 200 / 300 / 400 / 500 / 600 / 700*/
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
 
+/*반응형 화면 크기*/
+$mobile: 767px;
+$tablet: 1023px;
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
