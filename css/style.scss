@@ -29,7 +29,7 @@
   position: relative;
   background-color: var(--bg-color-inter);
   width: 100%;
-  height: 580px;
+  height: 520px;
   &::before {
     content: "";
     position: absolute;
@@ -38,7 +38,7 @@
     background-image: url(/img/intro_bg.png);
     opacity: 0.1;
     width: 100%;
-    height: 580px;
+    height: 520px;
   }
   #inner {
     padding-top: 80px;
@@ -79,7 +79,7 @@
   .right_icon {
     position: absolute;
     right: 0;
-    bottom: 10px;
+    bottom: -14px;
     width: 120px;
   }
 
@@ -159,7 +159,7 @@
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
   position: relative;
-  margin-top: -10vh;
+  margin-top: -6vh;
   #inner {
     max-width: 1024px;
   }
@@ -173,11 +173,11 @@
         text-align: left;
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: calc(100% / 2 - 3px);
         background-color: var(--bg-color-white);
         border: 1px solid var(--border-color);
         border-radius: 8px;
-        padding: 20px;
+        padding: 32px;
         color: var(--color);
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.01), 0 2px 4px rgba(0, 0, 0, 0.01), 0 4px 8px rgba(0, 0, 0, 0.01),
           0 8px 16px rgba(0, 0, 0, 0.01), 0 16px 32px rgba(0, 0, 0, 0.01), 0 32px 64px rgba(0, 0, 0, 0.01);
@@ -303,35 +303,36 @@
       }
     }
     .service_tab_wrap {
+      &.moblie {
+        display: none;
+      }
+      &.tablet {
+        display: block;
+        margin-top: 12px;
+      }
       .tabs {
         display: flex;
         justify-content: center;
-        column-gap: 16px;
+        column-gap: 6px;
         margin: 24px 0;
         .tab-button {
           display: inline-block;
-          padding: 10px 0;
+          padding: 10px 14px;
           cursor: pointer;
           position: relative;
           background: none;
           border: none;
           outline: none;
-          font-size: 15px;
-          color: var(--color-gray);
+          font-size: 14px;
+          color: var(--color-white);
+          border: 1px solid var(--border-color);
           font-weight: 500;
-          &::after {
-            content: "";
-            width: 100%;
-            bottom: 0;
-            left: 0;
-            background-color: var(--bg-color-default);
-            height: 2px;
-            position: absolute;
-            display: none;
-          }
+          border-radius: 8px;
+          color: var(--color-default);
           &.active {
-            font-weight: 700;
-            color: var(--color-default);
+            color: var(--color-white);
+            background-color: var(--bg-color-blue);
+            border: 1px solid var(--bg-color-blue);
             &::after {
               display: block;
             }
@@ -342,7 +343,6 @@
         padding: 0 12px;
         .content {
           display: none;
-          margin: 24px 0;
           &.active {
             display: block;
           }
@@ -371,7 +371,88 @@
                 padding: 24px 18px;
                 height: 100%;
                 p {
-                  font-weight: 700;
+                  font-weight: 500;
+                  line-height: 24px;
+                }
+              }
+              .table_nomal {
+                text-align: left;
+                width: 65%;
+                height: 100%;
+                padding: 24px 18px;
+                background-color: var(--bg-color-white);
+                word-break: break-all;
+                p {
+                  font-weight: 500;
+                  line-height: 24px;
+                  .warning {
+                    color: var(--color-warning);
+                    font-weight: 700;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .tablet_contents {
+        display: flex;
+        margin-top: 60px;
+        #content-basic {
+          .prod_name {
+            background-color: var(--bg-color-blue);
+          }
+        }
+        #content-standard {
+          .prod_name {
+            background-color: var(--bg-color-gray);
+          }
+        }
+        #content-premium {
+          .prod_name {
+            background-color: var(--bg-color-navy);
+          }
+        }
+        .content {
+          .prod_name {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 28px 0;
+            p {
+              font-weight: 500;
+              color: var(--color-white);
+            }
+          }
+          ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 24px;
+            border-top: 1px solid var(--border-color);
+            li {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              border-bottom: 1px solid var(--border-color);
+              font-size: 15px;
+              &:first-child {
+                border-bottom: 1px solid var(--border-color);
+              }
+              &:last-child {
+                border-bottom: none;
+              }
+              .table_bold {
+                color: var(--color-table);
+                background-color: var(--bg-color-table-gray);
+                width: 35%;
+                text-align: left;
+                padding: 24px 18px;
+                height: 100%;
+                p {
+                  font-weight: 500;
                   line-height: 24px;
                 }
               }
@@ -379,6 +460,7 @@
                 text-align: left;
                 width: 65%;
                 padding: 24px 18px;
+                height: 100%;
                 background-color: var(--bg-color-white);
                 word-break: break-all;
                 p {
@@ -659,7 +741,7 @@
     }
   }
   .funeral_list {
-    padding: 60px 0 48px 0;
+    padding: 60px 0 0 0;
     .section_text_wrap {
       .keyword_bage {
         display: inline-block;
@@ -701,40 +783,31 @@
       background-color: var(--bg-color-table-gray);
       ul {
         display: flex;
-        column-gap: 16px;
-        overflow-x: scroll;
-        margin: 24px 0 0 0;
-        padding: 0 24px 0 12px;
+        flex-wrap: wrap;
+        gap: 6px;
+        padding: 14px;
         -ms-overflow-style: none;
         margin-bottom: 12px;
         &::-webkit-scrollbar {
           display: none;
         }
         li {
-          width: calc(100%);
+          display: inline-block;
+          width: calc(100% / 6 - 6px);
           font-weight: 500;
-          padding: 12px 0;
+          padding: 12px;
           text-align: left;
           letter-spacing: -0.5px;
-          white-space: nowrap;
-          font-size: 15px;
+          font-size: 14px;
           color: var(--color-table);
           position: relative;
-          &::after {
-            content: "";
-            display: inline-block;
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            height: 2px;
-            width: 100%;
-            background-color: var(--bg-color-default);
-            display: none;
-          }
+          border: 1px solid var(--border-color);
+          border-radius: 4px;
+          line-height: 18px;
           &.active {
-            font-weight: 700;
-            color: var(--color-default);
+            color: var(--color-white);
+            background-color: var(--bg-color-blue);
+            border: 1px solid var(--border-blue);
             &::after {
               display: block;
             }
@@ -745,7 +818,7 @@
     .item_list {
       max-width: 1024px;
       margin: 0 auto;
-      padding: 0 12px;
+      padding: 12px;
       .item {
         width: 100%;
         display: none;
@@ -757,6 +830,7 @@
           display: flex;
           justify-content: space-between;
           padding: 12px 0;
+          height: 80px;
           .number_icon {
             background-color: var(--bg-color-blue);
             display: flex;
@@ -896,6 +970,9 @@
           column-gap: 30px;
           padding: 24px 0;
           border-top: 1px solid var(--border-color);
+          &:first-child {
+            border-top: none;
+          }
           .shop_icon {
             width: 24px;
             height: 24px;
@@ -906,13 +983,13 @@
             span {
               font-size: 18px;
               font-weight: 700;
-              margin-bottom: 8px;
+              margin-bottom: 4px;
               display: block;
               white-space: nowrap;
             }
             p {
-              font-size: 16px;
-              font-weight: 500;
+              font-size: 15px;
+              font-weight: 400;
               line-height: 20px;
               color: var(--color-gray);
               word-break: keep-all;
