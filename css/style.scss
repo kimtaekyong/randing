@@ -400,7 +400,9 @@
                         background-color: var(--bg-color-table-gray);
                         color: var(--color-gray);
                         white-space: nowrap;
+                        border-right: 1px solid var(--border-color);
                         &:last-child {
+                          border-right: none;
                           background-color: var(--bg-color-white);
                           color: var(--color-default);
                           padding: 18px 12px;
@@ -508,8 +510,10 @@
                       p {
                         padding: 18px;
                         background-color: var(--bg-color-table-gray);
+                        border-right: 1px solid var(--border-color);
                         color: var(--color-gray);
                         &:last-child {
+                          border-right: none;
                           background-color: var(--bg-color-white);
                           color: var(--color-default);
                           padding: 18px 12px;

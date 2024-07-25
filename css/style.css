@@ -485,8 +485,10 @@
   background-color: var(--bg-color-table-gray);
   color: var(--color-gray);
   white-space: nowrap;
+  border-right: 1px solid var(--border-color);
 }
 .container .service .service_tab_wrap .tab_contents .content ul li .table_nomal.two ul li p:last-child {
+  border-right: none;
   background-color: var(--bg-color-white);
   color: var(--color-default);
   padding: 18px 12px;
@@ -588,9 +590,11 @@
 .container .service .service_tab_wrap .tablet_contents .content ul li .table_nomal.two ul li p {
   padding: 18px;
   background-color: var(--bg-color-table-gray);
+  border-right: 1px solid var(--border-color);
   color: var(--color-gray);
 }
 .container .service .service_tab_wrap .tablet_contents .content ul li .table_nomal.two ul li p:last-child {
+  border-right: none;
   background-color: var(--bg-color-white);
   color: var(--color-default);
   padding: 18px 12px;
