@@ -114,7 +114,9 @@
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url("../img/intro_bg.png");
+  background: url("../img/intro_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   opacity: 0.125;
   width: 100%;
   height: 520px;
