@@ -72,7 +72,6 @@
   .list_tab_button ul li {
     width: calc(50% - 6px) !important;
     padding: 16px !important;
-    font-size: 15px !important;
   }
 }
 /*텍스트 컬러 관련 클래스 */
@@ -477,6 +476,7 @@
 .container .service .service_tab_wrap .tablet_contents {
   display: flex;
   margin-top: 60px;
+  padding: 0 12px;
 }
 .container .service .service_tab_wrap .tablet_contents #content-basic .prod_name {
   background-color: var(--bg-color-blue);
