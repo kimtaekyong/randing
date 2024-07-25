@@ -20,7 +20,6 @@
   overflow: hidden;
 }
 #inner {
-  max-width: 960px;
   height: 100%;
   margin: 0 auto;
   text-align: center;
@@ -161,7 +160,7 @@
   position: relative;
   margin-top: -6vh;
   #inner {
-    max-width: 1024px;
+    max-width: 1200px;
   }
   .point_list {
     padding: 18px;
@@ -382,6 +381,32 @@
                 padding: 18px;
                 background-color: var(--bg-color-white);
                 word-break: break-all;
+                &.two {
+                  padding: 0 !important;
+                  ul {
+                    border-top: none;
+                    border-left: 1px solid var(--border-color);
+                    li {
+                      display: flex;
+                      justify-content: start;
+                      border-bottom: 1px solid var(--border-color);
+                      &:last-child {
+                        border-bottom: none;
+                      }
+                      p {
+                        padding: 18px;
+                        background-color: var(--bg-color-table-gray);
+                        color: var(--color-gray);
+                        white-space: nowrap;
+                        &:last-child {
+                          background-color: var(--bg-color-white);
+                          color: var(--color-default);
+                          padding: 18px 12px;
+                        }
+                      }
+                    }
+                  }
+                }
                 p {
                   font-weight: 500;
                   line-height: 24px;
@@ -448,7 +473,7 @@
               .table_bold {
                 color: var(--color-table);
                 background-color: var(--bg-color-table-gray);
-                width: 35%;
+                width: 30%;
                 text-align: left;
                 padding: 18px;
                 height: 100%;
@@ -459,11 +484,36 @@
               }
               .table_nomal {
                 text-align: left;
-                width: 65%;
-                padding: 24px 18px;
+                width: 70%;
+                padding: 18px;
                 height: 100%;
                 background-color: var(--bg-color-white);
                 word-break: break-all;
+                &.two {
+                  padding: 0 !important;
+                  ul {
+                    border-top: none;
+                    border-left: 1px solid var(--border-color);
+                    li {
+                      display: flex;
+                      justify-content: start;
+                      border-bottom: 1px solid var(--border-color);
+                      &:last-child {
+                        border-bottom: none;
+                      }
+                      p {
+                        padding: 18px;
+                        background-color: var(--bg-color-table-gray);
+                        color: var(--color-gray);
+                        &:last-child {
+                          background-color: var(--bg-color-white);
+                          color: var(--color-default);
+                          padding: 18px 12px;
+                        }
+                      }
+                    }
+                  }
+                }
                 p {
                   font-weight: 500;
                   line-height: 24px;
