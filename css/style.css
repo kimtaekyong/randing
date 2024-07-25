@@ -447,6 +447,7 @@
 .container .service .service_tab_wrap .tab_contents .content ul li .table_bold {
   color: var(--color-table);
   background-color: var(--bg-color-table-gray);
+  border-right: 1px solid var(--border-color);
   width: 35%;
   text-align: left;
   padding: 18px;
@@ -469,7 +470,6 @@
 }
 .container .service .service_tab_wrap .tab_contents .content ul li .table_nomal.two ul {
   border-top: none;
-  border-left: 1px solid var(--border-color);
 }
 .container .service .service_tab_wrap .tab_contents .content ul li .table_nomal.two ul li {
   display: flex;
@@ -548,6 +548,7 @@
 .container .service .service_tab_wrap .tablet_contents .content ul li .table_bold {
   color: var(--color-table);
   background-color: var(--bg-color-table-gray);
+  border-right: 1px solid var(--border-color);
   width: 30%;
   text-align: left;
   padding: 18px;
@@ -570,7 +571,6 @@
 }
 .container .service .service_tab_wrap .tablet_contents .content ul li .table_nomal.two ul {
   border-top: none;
-  border-left: 1px solid var(--border-color);
 }
 .container .service .service_tab_wrap .tablet_contents .content ul li .table_nomal.two ul li {
   display: flex;

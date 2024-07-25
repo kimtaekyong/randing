@@ -365,6 +365,7 @@
               .table_bold {
                 color: var(--color-table);
                 background-color: var(--bg-color-table-gray);
+                border-right: 1px solid var(--border-color);
                 width: 35%;
                 text-align: left;
                 padding: 18px;
@@ -385,7 +386,6 @@
                   padding: 0 !important;
                   ul {
                     border-top: none;
-                    border-left: 1px solid var(--border-color);
                     li {
                       display: flex;
                       justify-content: start;
@@ -473,6 +473,7 @@
               .table_bold {
                 color: var(--color-table);
                 background-color: var(--bg-color-table-gray);
+                border-right: 1px solid var(--border-color);
                 width: 30%;
                 text-align: left;
                 padding: 18px;
@@ -493,7 +494,6 @@
                   padding: 0 !important;
                   ul {
                     border-top: none;
-                    border-left: 1px solid var(--border-color);
                     li {
                       display: flex;
                       justify-content: start;
