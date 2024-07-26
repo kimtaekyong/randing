@@ -853,6 +853,7 @@
         li {
           display: inline-block;
           width: calc(100% / 6 - 6px);
+          cursor: pointer;
           font-weight: 500;
           padding: 14px;
           text-align: left;

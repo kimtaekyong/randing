@@ -280,7 +280,7 @@
   margin-top: 6px;
 }
 .container .limousine {
-  padding-top: 48px;
+  padding-top: 60px;
 }
 .container .limousine .keyword_bage {
   display: inline-block;
@@ -352,7 +352,7 @@
   word-break: break-all;
 }
 .container .service {
-  padding-top: 48px;
+  padding-top: 60px;
 }
 .container .service .keyword_bage {
   display: inline-block;
@@ -909,6 +909,7 @@
 .container .funeral_list .list_tab_button ul li {
   display: inline-block;
   width: calc(16.6666666667% - 6px);
+  cursor: pointer;
   font-weight: 500;
   padding: 14px;
   text-align: left;
