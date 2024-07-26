@@ -1,3 +1,7 @@
+let linkTest = "연결확인";
+
+console.log(linkTest);
+
 document.addEventListener("DOMContentLoaded", function () {
   // tablet_contents 요소를 선택
   var tabletContents = document.getElementsByClassName("tablet_contents")[0];
@@ -15,4 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
       content.style.borderRight = "block";
     }
   }
+
+  console.log(contents);
 });
