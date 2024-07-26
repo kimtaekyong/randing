@@ -1,5 +1,4 @@
 let linkTest = "연결확인";
-
 console.log(linkTest);
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -19,6 +18,4 @@ document.addEventListener("DOMContentLoaded", function () {
       content.style.borderRight = "block";
     }
   }
-
-  console.log(contents);
 });
